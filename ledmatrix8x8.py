@@ -5,7 +5,6 @@ import time
 from threading import Thread
 import random
 
-# from Adafruit_Python_GPIO.Adafruit_GPIO import *
 from Adafruit_Python_LED_Backpack.Adafruit_LED_Backpack import BicolorMatrix8x8
 
 FIBINACCI_MODE = 0
@@ -62,7 +61,6 @@ class ModeController:
                             self.current_mode = FIBINACCI_MODE
         self.bus_lock.release()
 
-
 class FibDisplay:
     '''
         Fibinocci diplay on an 8x8 matrix. Represents 1 to largest 64 bit
@@ -115,7 +113,6 @@ class FibDisplay:
             self.fib2 = 1
             self.fib3 = 2
         self.bus_lock.release()
-
 
 class IdleDisplay:
     '''
